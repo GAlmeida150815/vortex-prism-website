@@ -201,7 +201,7 @@ const Highlights = () => {
 
   const formatInputToClipDate = (yyyyMm) => {
     if (!yyyyMm) return "";
-    const [year, month] = yyyMm.split("-");
+    const [year, month] = yyyyMm.split("-");
     return `${MONTHS[parseInt(month, 10) - 1]} ${year}`;
   };
 
