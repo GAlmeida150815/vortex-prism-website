@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-vortex-black: #050505;
+  --color-vortex-dark: #111111;
+  --color-vortex-gray: #222222;
+  --color-vortex-light: #F5F5F5;
+  --color-vortex-muted: #A3A3A3;
+  
+  --font-display: "Orbitron", sans-serif;
+  --font-sans: "Rajdhani", sans-serif;
+}
+
+body {
+  background-color: var(--color-vortex-black);
+  color: var(--color-vortex-light);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+@utility text-prism {
+  background-image: linear-gradient(to right, #8A2BE2, #0000FF, #00BFFF, #00FF00, #FFFF00, #FFA500, #FF0000);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes pan-bg {
+  0% { background-position: 0% center; }
+  100% { background-position: -200% center; }
+}
+
+@utility text-prism-animated {
+  background-image: linear-gradient(to right, #8A2BE2, #0000FF, #00BFFF, #00FF00, #FFFF00, #FFA500, #FF0000, #8A2BE2);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: pan-bg 2.5s linear infinite;
+}
