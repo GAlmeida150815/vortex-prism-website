@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { fetchTrackerStats } from '@/utils/api';
 
 // --- IMPORT BANNERS ---
 import jflBanner from '@/assets/banners/jfl.png';
@@ -49,30 +48,8 @@ const Roster = () => {
 
   const PlayerCard = ({ player }) => {
     const [stats, setStats] = useState(null);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
-
-    useEffect(() => {
-      if (player.steam64) {
-        const loadStats = async () => {
-          setLoading(true);
-          setError(false);
-          
-          const result = await fetchTrackerStats(player.steam64);
-          
-          if (result.error) {
-            setError(true);
-          } else {
-            setStats(result.data);
-          }
-          setLoading(false);
-        };
-        loadStats();
-      } else {
-        setLoading(false);
-        setError(true);
-      }
-    }, [player.steam64]);
 
     return (
       <motion.div 

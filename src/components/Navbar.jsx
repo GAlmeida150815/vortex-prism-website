@@ -14,7 +14,6 @@ const Navbar = () => {
     { name: 'CONTACT', path: '/contact' },
   ];
 
-  // Framer Motion variants for the main dropdown container
   const menuVariants = {
     hidden: { 
       opacity: 0, 
@@ -27,13 +26,12 @@ const Navbar = () => {
       transition: { 
         duration: 0.3, 
         ease: "easeOut",
-        staggerChildren: 0.1, // Staggers the animation of the links
+        staggerChildren: 0.1,
         delayChildren: 0.1
       }
     }
   };
 
-  // Framer Motion variants for the individual links sliding in
   const linkVariants = {
     hidden: { opacity: 0, x: -20 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.3, ease: "easeOut" } }
