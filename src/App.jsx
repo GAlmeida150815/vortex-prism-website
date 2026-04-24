@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import Footer from '@/components/Footer'; 
 import Roster from '@/components/Roster'; 
 import Contact from '@/components/Contact'; 
+import Merch from '@/components/Merch'; 
 import Highlights from '@/components/Highlights'; 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Hero />} />
             <Route path="/roster" element={<Roster />} />
             <Route path="/highlights" element={<Highlights />} />
+            <Route path="/merch" element={<Merch />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
