@@ -15,7 +15,7 @@ const MAPS = {
 
 const TAGS = {
   FUNNY: 'Funny', FAIL: 'Fail', BLAZE: 'Blaze', NINJA: 'Ninja',
-  CLUTCH: 'Clutch', AWP: 'AWP', ACE: 'Ace', ONE_V_X: '1vX'
+  CLUTCH: 'Clutch', AWP: 'AWP', ACE: 'Ace', ONE_V_X: '1vX', HIGHLIGHTS: 'Highlights'
 };
 
 const PLATFORMS = {
@@ -28,6 +28,16 @@ const Highlights = () => {
   const clips = [
     {
       id: 1,
+      title: "Highlights do Cap!",
+      player: PLAYERS.JFL,
+      match: MAPS.MILLITIA,
+      tags: [TAGS.HIGHLIGHTS, TAGS.AWP, TAGS.CLUTCH],
+      date: "APR 2026",
+      type: PLATFORMS.YOUTUBE,
+      videoId: "PLYUT-A_5f8"
+    },
+    {
+      id: 2,
       title: "Bottle Flip ?!",
       player: PLAYERS.HNDR,
       match: MAPS.OFFICE,
@@ -37,7 +47,7 @@ const Highlights = () => {
       videoId: "ECuFCgvVppY"
     },
     {
-      id: 2,
+      id: 3,
       title: "No Bullets 😒 ?",
       player: PLAYERS.JFL,
       match: MAPS.ANCIENT,
@@ -47,7 +57,7 @@ const Highlights = () => {
       videoId: "WonderfulSourOcelotTwitchRaid-q1GJg_7i3MiBYq4X"
     },
     {
-      id: 3,
+      id: 4,
       title: "1v2 Clutch",
       player: PLAYERS.LIPWO,
       match: MAPS.ANCIENT,
@@ -57,7 +67,7 @@ const Highlights = () => {
       videoId: "EnergeticBitterSoybeanKippa-W_ZmYtz-kixqYWSk"
     },
     {
-      id: 4,
+      id: 5,
       title: "🥷 Defuse",
       player: PLAYERS.LIPWO,
       match: MAPS.ANCIENT,
