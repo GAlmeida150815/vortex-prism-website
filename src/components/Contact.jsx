@@ -3,6 +3,12 @@ import { motion } from 'framer-motion';
 const Contact = () => {
   const contactLinks = [
     { 
+      name: 'Discord', 
+      label: 'Connect with us', 
+      url: 'https://discord.gg/S3NHZRTtyP', 
+      type: 'social' 
+    },
+    { 
       name: 'INSTAGRAM', 
       label: '@VortexPrism', 
       url: 'https://instagram.com/vortexprism', 

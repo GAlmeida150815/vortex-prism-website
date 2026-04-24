@@ -35,6 +35,7 @@ const Footer = () => {
           <div className="flex flex-col items-start md:items-end">
             <h3 className="font-display font-bold text-white tracking-widest mb-4">CONNECT</h3>
             <div className="flex flex-col md:items-end gap-3 font-display text-sm tracking-widest">
+              <a href="https://discord.gg/S3NHZRTtyP" target="_blank" rel="noreferrer" className="text-vortex-muted hover:text-white hover:-translate-y-1 transition-all duration-300">DISCORD</a>
               <a href="https://www.instagram.com/vortexprism" target="_blank" rel="noreferrer" className="text-vortex-muted hover:text-white hover:-translate-y-1 transition-all duration-300">INSTAGRAM</a>
               <a href="https://www.youtube.com/@VortexPrism-cs2" target="_blank" rel="noreferrer" className="text-vortex-muted hover:text-white hover:-translate-y-1 transition-all duration-300">YOUTUBE</a>
               <a href="https://linktr.ee/vortexprismcs2" target="_blank" rel="noreferrer" className="text-vortex-muted hover:text-white hover:-translate-y-1 transition-all duration-300">LINKTREE</a>

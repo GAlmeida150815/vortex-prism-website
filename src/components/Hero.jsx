@@ -55,7 +55,6 @@ const Hero = () => {
             <span className="relative z-10 group-hover:text-vortex-black transition-colors duration-300">MEET THE ROSTER</span>
           </Link>
         </motion.div>
-
       </div>
     </div>
   );

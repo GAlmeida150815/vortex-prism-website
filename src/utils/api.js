@@ -1,5 +1,5 @@
 export const fetchTrackerStats = async (steamId64) => {
-  const API_KEY = 'YOUR_REAL_TRN_API_KEY_HERE'; 
+  const API_KEY = '1554167a-6076-454f-8679-d2246fb3e388'; 
   
   try {
     const response = await fetch(`/api/trn/v2/csgo/standard/profile/steam/${steamId64}`, {
