@@ -3,7 +3,7 @@ import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
 import SearchableSelect from '@/components/SearchableSelect';
 
 const PLAYERS = {
-  HNDR: 'HnDR', JFL: 'JFL', LIPWO: 'Lipwo', EDER: 'Eder',
+  HNRD: 'HnRD', JFL: 'JFL', LIPWO: 'Lipwo', EDER: 'Eder',
   RAFA: 'Rafa', REFORMADO: 'Reformado', ICETAPZ: 'IceTapz'
 };
 
@@ -39,7 +39,7 @@ const Highlights = () => {
     {
       id: 2,
       title: "Bottle Flip ?!",
-      player: PLAYERS.HNDR,
+      player: PLAYERS.HNRD,
       match: MAPS.OFFICE,
       tags: [TAGS.FUNNY],
       date: "APR 2026",

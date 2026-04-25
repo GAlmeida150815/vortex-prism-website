@@ -25,7 +25,7 @@ const Roster = () => {
     { name: 'Lipwo', role: 'Rifler', picture: lipwoPic, banner: lipwoBanner, steam: 'https://steamcommunity.com/id/lipwo/', steam64: '76561198000000001' },
     { name: 'Eder', role: 'Rifler', picture: ederPic, banner: ederBanner, steam: 'https://steamcommunity.com/id/eder150815/', steam64: '76561198000000002' },
     { name: 'Rafa', role: 'Rifler', picture: rafaPic, banner: rafaBanner, steam: 'https://steamcommunity.com/id/merafa/', steam64: '76561198000000003' },
-    { name: 'HnDR', role: 'Rifler', picture: hndrPic, banner: hndrBanner, steam: 'https://steamcommunity.com/id/tavasquaseputa', steam64: '76561198000000004' },
+    { name: 'HnRD', role: 'Rifler', picture: hndrPic, banner: hndrBanner, steam: 'https://steamcommunity.com/id/tavasquaseputa', steam64: '76561198000000004' },
   ];
 
   const substitutes = [
@@ -47,10 +47,6 @@ const Roster = () => {
   };
 
   const PlayerCard = ({ player }) => {
-    const [stats, setStats] = useState(null);
-    const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(false);
-
     return (
       <motion.div 
         variants={cardVariants}
