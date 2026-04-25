@@ -47,6 +47,10 @@ const Roster = () => {
   };
 
   const PlayerCard = ({ player }) => {
+    const [stats] = useState(null);
+    const [loading] = useState(false);
+    const [error] = useState(false);
+
     return (
       <motion.div 
         variants={cardVariants}
